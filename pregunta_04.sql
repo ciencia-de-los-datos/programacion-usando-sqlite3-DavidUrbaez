@@ -40,3 +40,7 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
+SELECT K0,c16 FROM (
+  SELECT *,SUBSTRING(c16,1,1) first_letter FROM tbl1
+  WHERE first_letter=K0
+)
